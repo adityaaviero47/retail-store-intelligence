@@ -1,0 +1,66 @@
+{
+  "data": {
+    "stores": 1115,
+    "store_days": 844338,
+    "start": "2013-01-01",
+    "end": "2015-07-31"
+  },
+  "promo": {
+    "sales_uplift": 0.38768649816790623,
+    "footfall_uplift": 0.2117578777787381,
+    "ticket_uplift": 0.13844262769126403,
+    "within_store_sales_uplift_median": 0.3651449235457165
+  },
+  "drivers": {
+    "footfall_share_of_variance": 0.9801814758889632,
+    "ticket_share_of_variance": 0.01981852411103698
+  },
+  "competition": {
+    "stores": 155,
+    "median_sales_change": -0.03504263944301578,
+    "median_footfall_change": -0.027043198314017358
+  },
+  "forecast": {
+    "train_end": "2015-06-19",
+    "test_days": 42,
+    "test_rows": 40282,
+    "baseline": {
+      "rmspe": 0.1567837784995466,
+      "wape": 0.11052707430891127
+    },
+    "model": {
+      "rmspe": 0.14011530192223565,
+      "wape": 0.09308321273786674
+    },
+    "wape_reduction": 0.15782433109819605
+  },
+  "anomaly": {
+    "injected": 500,
+    "injected_drop": 0.4,
+    "thresholds": {
+      "2.5": {
+        "recall": 0.972,
+        "precision": 0.22448036951501155,
+        "flags": 2165,
+        "false_alarm_rate": 0.042205017344527675,
+        "injected_loss_caught": 0.9610720411663807
+      },
+      "3.0": {
+        "recall": 0.938,
+        "precision": 0.31667792032410536,
+        "flags": 1481,
+        "false_alarm_rate": 0.02543864059122216,
+        "injected_loss_caught": 0.9308144746306646
+      },
+      "3.5": {
+        "recall": 0.886,
+        "precision": 0.41209302325581393,
+        "flags": 1075,
+        "false_alarm_rate": 0.01588658187119803,
+        "injected_loss_caught": 0.8793401759530793
+      }
+    },
+    "revenue_at_risk_flagged": 3559540.8022986623,
+    "revenue_at_risk_true_injected": 1445840.0
+  }
+}
